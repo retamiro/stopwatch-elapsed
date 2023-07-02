@@ -1,9 +1,9 @@
 {
   "name": "stopwatch-elapsed",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Stopwatch with elapsed time calculation in human format",
-  "main": "index.js",
-  "typings": "index.d.ts",
+  "main": "build/index.js",
+  "typings": "build/index.d.ts",
   "scripts": {
     "start:dev": "npx nodemon",
     "clean": "rm -rf ./build",
