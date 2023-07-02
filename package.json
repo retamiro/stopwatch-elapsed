@@ -6,10 +6,12 @@
   "typings": "index.d.ts",
   "scripts": {
     "start:dev": "npx nodemon",
-    "build": "rimraf ./build && tsc --project tsconfig.build.json",
+    "clean": "rm -rf ./build",
+    "build": "npm run clean && tsc --project tsconfig.build.json",
     "test": "jest",
     "lint": "eslint . --ext .ts",
-    "prettier-format": "prettier --config .prettierrc 'src/**/*.ts' --write"
+    "prettier-format": "prettier --config .prettierrc 'src/**/*.ts' --write",
+    "prepack": "npm run build"
   },
   "keywords": [
     "stopwatch",
@@ -50,5 +52,8 @@
       "name": "Marcio Retamiro",
       "email": "retamiro@gmail.com"
     }
+  ],
+  "files":[
+    "build/**/*"
   ]
 }
