@@ -1,6 +1,6 @@
 {
   "name": "stopwatch-elapsed",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Stopwatch with elapsed time calculation in human format",
   "main": "build/index.js",
   "typings": "build/index.d.ts",
@@ -13,6 +13,7 @@
     "prettier-format": "prettier --config .prettierrc 'src/**/*.ts' --write",
     "prepack": "npm run build"
   },
+  "readme": "README.md",
   "keywords": [
     "stopwatch",
     "timer",
