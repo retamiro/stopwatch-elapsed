@@ -59,6 +59,8 @@ export class StopWatch {
 	 * Return the total running time in milliseconds
 	 */
 	get elapsed() {
+		if (this.isRunning())
+			this.setElapsed()
 		return this._elapsed
 	}
 
